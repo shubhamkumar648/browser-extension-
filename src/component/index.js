@@ -1,4 +1,5 @@
 import { CoverImage } from "./CoverImage";
+import { Currtime } from "./Currtime";
 
 
-export{CoverImage}
+export{CoverImage,Currtime}

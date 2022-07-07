@@ -2,9 +2,14 @@
 
 
 
-/* .cover-img {
-    height: 100vh;
-    position: fixed;
-    width: 100vw;
-    z-index: -1;
-} */
+.coverImage-mainContainer {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: blue;
+}
+
+.currTime-container{
+position: absolute ;
+   }
