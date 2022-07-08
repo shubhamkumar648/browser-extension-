@@ -8,7 +8,8 @@ import { Currtime } from './Currtime'
 export const CoverImage = () => {
 
   const [image, setImage] = useState({
-    url: "",
+
+  url: "", 
   location: "",
   description: "",});
 
@@ -24,16 +25,15 @@ export const CoverImage = () => {
     <div className='coverImage-mainContainer flex'>
 
     <div className='currTime-container'>
+
     <Currtime/>
+
     <h3>{location}</h3>
 
     </div>
 
-<img src={url} alt={description} className="img_responsive"/>
-
-    </div>
-    
-
-
-  )
-}
+<img src={url} alt={description} className="img_responsive cover-image" />
+er
+   </div>
+     )
+} 

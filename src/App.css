@@ -7,8 +7,9 @@
  display: flex;
  justify-content: center;
  align-items: center;
- color: blue;
+ color: white;
 }
+
 
 .currTime-container{
 position: absolute ;
