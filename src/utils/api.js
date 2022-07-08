@@ -2,6 +2,7 @@ import axios from "axios";
 
 export const getImage = async (setImageData) => {
   try {
+    
     const {
       data: { urls, location, discrptions }
     } = await axios.get(
