@@ -1,39 +1,36 @@
-import React from 'react'
-import { useEffect,useState } from 'react'
-import { getImage } from '../utils/api'
-import { Currtime } from './Currtime'
-
-
+import React from "react";
+import { useEffect, useState } from "react";
+import { getImage } from "../utils/api";
+import { Currtime } from "./Currtime";
+import { MainFocous } from "./MainFocous";
+import { Quotes } from "./Quotes";
+import { GetWeather } from "./Weather";
 
 export const CoverImage = () => {
-
   const [image, setImage] = useState({
-
-  url: "", 
-  location: "",
-  description: "",});
+    url: "",
+    location: "",
+    description: ""
+  });
 
   const { url, location, description } = image;
 
   useEffect(() => {
+    getImage(setImage);
+  }, []);
 
-    getImage(setImage)
-    
-  },[])
-  
   return (
-    <div className='coverImage-mainContainer flex'>
+    <div className="coverImage-mainContainer flex">
+      <div className="currTime-container">
+        <Currtime />
 
-    <div className='currTime-container'>
+        <h3>{location}</h3>
+        <Quotes/>
+        <MainFocous/>
 
-    <Currtime/>
+      </div>
 
-    <h3>{location}</h3>
-
+      <img src={url} alt={description} className="img_responsive cover-image" />
     </div>
-
-<img src={url} alt={description} className="img_responsive cover-image" />
-er
-   </div>
-     )
-} 
+  );
+};

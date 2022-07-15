@@ -1,0 +1,10 @@
+.weather-container {
+  position: relative;
+  border: 1px solid black;
+
+}
+
+.weather-content {
+  position: absolute;
+ top: 10%
+}
