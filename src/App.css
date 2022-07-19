@@ -1,15 +1,81 @@
 
-
-
 .coverImage-mainContainer {
  position: relative;
  display: flex;
  justify-content: center;
  align-items: center;
- color: white;
+ color: #cee0dc;
+ flex-direction: column;
 }
 
 
-.currTime-container{
+.main-container
+{
 position: absolute ;
+background-color: hsla(0,0%,100%,.15);
+height: 50rem;
+width: 55rem;
+
    }
+
+  .getWeather {
+   display: flex;
+   justify-content: flex-end;
+   }
+
+   .weather-container {
+         display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+   }
+
+  .cover-image {
+   height: 100vh;
+   z-index: -1;
+  }
+
+  .getTime {
+    justify-content: center;
+      display: flex;
+      padding-top: 5rem;
+    }
+
+  .focous-input {
+   border: none;
+    width: 100%;
+    border-bottom: 2px solid black;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: larger;
+    color: aliceblue;
+    }
+
+
+   .MainFocous {
+      display: flex;
+      justify-content: center;
+      padding-top: 2rem;
+    }
+
+.getQuotes {
+padding-top: 29rem;
+
+}
+
+.center {
+justify-content: center;
+}
+
+.location {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+}  
+
+.download {
+
+      position: absolute;
+      top: 0;
+      right: 0;
+}

@@ -16,11 +16,11 @@ export const Quotes = () => {
         getRandomQuotes(setQuote)
 
     },[])
-    
+  
   return (
-    <div>
-      <h4>{text}</h4>
-      <h5>{author}</h5>
+    <div className='flex center'>
+      <small> {text} </small>
+      <small> ~ {author} </small>
     </div>
   )
 }

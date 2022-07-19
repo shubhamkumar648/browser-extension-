@@ -20,20 +20,29 @@ export const MainFocous = () => {
   };
 
   return (
-    <div>
+    <div className="flex">
       {!localMainFocus.task && !localMainFocus.isDone && (
+
         <div>
-          <p>What's your main focous today? </p>
-          <input type="text" onKeyDown={inputHandler} />
+        <h2>What's your main focous today? </h2>
+
+        <input type="text" className="focous-input" onKeyDown={inputHandler} />
+
         </div>
       )}
+ 
+      {localMainFocus.task && !localMainFocus.isDone && (
 
-      {!localMainFocus.editing && <span>{localMainFocus.task}</span>}
+                <div className="flex">
+                
+                {!localMainFocus.editing && (<h3 className="mr-3">{localMainFocus.task}</h3>)}
 
+              
       {localMainFocus.editing && (
+        <div>
               <input
-                className="edit-input br-m text-m px-s"
                 type="text"
+                className="focous-input"
                 value={localMainFocus.task}
                 onChange={(event) =>
                   setLocalmainfocus({
@@ -43,12 +52,12 @@ export const MainFocous = () => {
                 }
                 onKeyDown={inputHandler}
               />
+              </div>
             )}
+         
 
-
-            <div className="text-light">
+            <div className="flex mt-2 focous-icon" >
               <FiEdit
-                className="pointer mx-s"
                 onClick={() =>
                   setLocalmainfocus({
                     ...localMainFocus,
@@ -57,7 +66,7 @@ export const MainFocous = () => {
                 }
               />
               <FiCheckSquare
-                className="pointer mx-s"
+              className="ml-2 focous-icon"
                 onClick={() =>
                   setLocalmainfocus({
                     ...localMainFocus,
@@ -68,9 +77,10 @@ export const MainFocous = () => {
               />
             </div>
 
-
-            {localMainFocus.isDone && (
-        <p className="text-light text-s my-xs">Kudos, You did it!</p>
+          </div>
+      )}
+          {localMainFocus.isDone && (
+        <p className="text-light text-s my-xs">Great Work!  </p>
       )}
       {localMainFocus.isDone && (
         <FiArrowRightCircle

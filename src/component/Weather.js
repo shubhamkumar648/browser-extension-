@@ -22,12 +22,9 @@ useEffect(() => {
 
   return (
     <div className='weather-container'>
-     <div className='weather-content'>
-       <h4>{weather.temp}</h4>
-        <h4>{weather.city}</h4>
-        {/* <h4>{weather.icon}</h4> */}
-        <h4>{weather.desc}</h4>
+       <h4 className='font-xl '>{weather.temp}</h4>
+        <small className='font-xl '> {weather.city}</small>
+        <small className='font-xl '>{weather.desc}</small>
      </div>
-    </div>
   )
 }

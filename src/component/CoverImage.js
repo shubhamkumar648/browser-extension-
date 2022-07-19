@@ -20,17 +20,38 @@ export const CoverImage = () => {
   }, []);
 
   return (
-    <div className="coverImage-mainContainer flex">
-      <div className="currTime-container">
-        <Currtime />
+    <div className="coverImage-mainContainer">
+    <div className="download">
+      <button className="btn">download</button>
+    </div>
+      <div className="main-container">
+        
+          <div className="getWeather">
+           <GetWeather/>
+          </div>
+             
+            <div className="getTime">
+            <Currtime/>
+             </div>
 
-        <h3>{location}</h3>
-        <Quotes/>
-        <MainFocous/>
+             <div className="MainFocous">
+                <MainFocous />
+                </div>
+
+               <div className="getQuotes">
+               <Quotes/>
+                
+              </div>
+
 
       </div>
+  
+      <div className="location">
+                   <small className="mb-1 font-l"> place:{location}</small>
+                 </div>
+   <img src={url} alt={description} className="img_responsive cover-image" />
 
-      <img src={url} alt={description} className="img_responsive cover-image" />
-    </div>
+     </div>
+
   );
 };
