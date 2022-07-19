@@ -30,7 +30,7 @@ export const Currtime = () => {
     <div>
     
     <h1> {hours}: {minutes} </h1>
-      <h3> {day} </h3>
+      <h4> {day} </h4>
     </div>
   )
 }
