@@ -16,8 +16,7 @@ const [weather, setWeather] = useState({
 })
 
 useEffect(() => {
-
-    getWeatherUpdates(setWeather)
+  getWeatherUpdates(setWeather)
 }, [])
 
   return (
@@ -25,6 +24,7 @@ useEffect(() => {
        <h4 className='font-xl '>{weather.temp}</h4>
         <small className='font-xl '> {weather.city}</small>
         <small className='font-xl '>{weather.desc}</small>
+
      </div>
   )
 }

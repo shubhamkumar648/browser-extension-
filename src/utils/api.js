@@ -40,7 +40,7 @@ export const getWeatherUpdates = (setWeather) => {
         `https://fcc-weather-api.glitch.me/api/current?lat=${coordinates.latitude}&lon=${coordinates.longitude}`
       );
 
-      console.log(data);
+      console.log(data)
       setWeather({
         city: data.name,
         temp: data.main.temp + "°C",
