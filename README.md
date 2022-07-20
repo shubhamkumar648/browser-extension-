@@ -10,7 +10,7 @@
 
 ---
 
-- brwser-extension  is a firefox add-on that replaces your new tab with a beautiful wallpaper packed with utilities like Focus of the Day,  Weather update and a Quote
+- browser-extension  is a firefox add-on that replaces your new tab with a beautiful wallpaper packed with utilities like Focus of the Day,  Weather update and a Quote
 
 ## Live URL 
 [browser-extension](https://browser-extension.vercel.app/)
